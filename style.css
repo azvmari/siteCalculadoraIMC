@@ -28,26 +28,33 @@ p {
   font-size: 22px;
 }
 
-.menu-expansivo {
+#menu-expansivo {
   display: flex;
   flex-direction: column;
   background-color: #F0FFF0;
-  padding: 20px;
-  width: 300px;
+  width: 0;
   height: 100%;
   font-size: 22px;
   position: fixed;
   left: 0;
   top: 0;
   gap: 10px;
+  overflow: hidden;
+  transition: all 500ms;
 }
 
-.menu-expansivo button {
+#menu-expansivo button {
   margin-bottom: 20px;
+  width: fit-content;
 }
 
-.menu-expansivo a:hover {
+#menu-expansivo a:hover {
   cursor: pointer;
   transition: 200ms;
   opacity: 0.5;
+}
+
+#menu-expansivo.open{
+  padding: 20px;
+  width: 300px;
 }
