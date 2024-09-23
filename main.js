@@ -11,8 +11,8 @@ if(form) {
     </button>
     <a href="/index.html">Início</a>
     <a href="/alimentacao.html">Alimentação</a>
-    <a>Exercícios</a>
-    <a>Saúde mental</a>
+    <a href="/exercicios.html">Exercícios</a>
+    <a href="/saude.html">Saúde mental</a>
     <a href="/calculadoraIMC.html">Calculadora de IMC</a>
   </div>
   `
