@@ -3,6 +3,7 @@ body {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 header {
@@ -10,7 +11,8 @@ header {
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 20px;
   align-items: center;
 }
 
@@ -24,4 +26,28 @@ main {
 p {
   text-align: justify;
   font-size: 22px;
+}
+
+.menu-expansivo {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0FFF0;
+  padding: 20px;
+  width: 300px;
+  height: 100%;
+  font-size: 22px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  gap: 10px;
+}
+
+.menu-expansivo button {
+  margin-bottom: 20px;
+}
+
+.menu-expansivo a:hover {
+  cursor: pointer;
+  transition: 200ms;
+  opacity: 0.5;
 }
