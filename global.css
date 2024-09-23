@@ -7,12 +7,78 @@
   background: transparent;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  background-color: #F0FFF0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  padding: 25px 50px;
+  background-color: #fff;
+}
+
 button {
   font-size: 24px;
   cursor: pointer;
-  transition: 200ms;
+  transition: opacity 200ms;
 }
 
 button:hover{
   opacity: 0.5;
+}
+
+#menu-expansivo {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0FFF0;
+  width: 0;
+  height: 100%;
+  font-size: 22px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  gap: 10px;
+  overflow: hidden;
+  transition: all 500ms;
+}
+
+#menu-expansivo button {
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+#menu-expansivo * {
+  opacity: 0;
+}
+
+#menu-expansivo a:hover {
+  cursor: pointer;
+  transition: 200ms;
+  opacity: 0.5;
+}
+
+#menu-expansivo.open{
+  padding: 20px;
+  width: 300px;
+}
+
+#menu-expansivo.open * {
+  opacity: 1;
 }

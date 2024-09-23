@@ -1,0 +1,53 @@
+@import "./global.css";
+
+main {
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 22px;
+}
+
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 400px;
+  max-width: 90%;
+}
+
+.box-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.box-input label {
+  font-size: 20px;
+}
+
+.box-input input {
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  padding-left: 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+form button {
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #b8f5b8;
+}
+
+#result-text {
+  width: 100%;
+  text-align: center;
+}

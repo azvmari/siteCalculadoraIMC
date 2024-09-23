@@ -1,0 +1,57 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="calculadoraIMC.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="main.js" defer></script>
+  <title>Calculadora de IMC </title>
+</head>
+
+<body>
+  <header>
+    <button onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <h1>Calculadora de Índice de Massa Corporal (IMC)</h1>
+    <div />
+  </header>
+  <main>
+    <p>
+      O Índice de Massa Corporal, conhecido pela sigla IMC, é um cálculo que
+      permite medir se alguém está ou não com o peso ideal, de acordo com sua altura.
+    </p>
+    <p>
+      Para calcular o seu IMC, preencha os campos abaixo:
+    </p>
+
+    <form id="form-calculate-imc">
+      <div class="box-input">
+        <label>Digite seu peso: </label>
+        <input id="input-weight" placeholder="em kg: 60" />
+      </div>
+      <div class="box-input">
+        <label>Digite sua altura: </label>
+        <input id="input-height" placeholder="em metros: 1.70" />
+      </div>
+
+      <button>Calcular IMC</button>
+
+      <p id="result-text"></p>
+    </form>
+  </main>
+  <div id="menu-expansivo">
+    <button onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a href="index.html">Início</a>
+    <a>Alimentação</a>
+    <a>Exercícios</a>
+    <a>Saúde mental</a>
+    <a href="calculadoraIMC.html">Calculadora de IMC</a>
+  </div>
+</body>
+
+</html>
