@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  background-color: #F0FFF0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #fff;
+  flex: 1;
+  width: 100%;
+  padding: 25px 50px;
+}
+
+p {
+  text-align: justify;
+  font-size: 22px;
+}
